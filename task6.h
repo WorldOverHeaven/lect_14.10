@@ -21,25 +21,25 @@ string delSmileAll(string c) {
     advance(it2, 1);
     advance(it3, 2);
 
-
-
-    string a;
-
     for (int i = 0; i < b.size() - 2; ++i) {
         if (*it1 == ':' && *it2 == '-' && (*it3 == '(' || *it3 == ')')) {
-            i += 2;
-            advance(it1, 3);
-            advance(it2, 3);
-            advance(it3, 3);
+            if (i >= 3) {
+                i += -4;
+                advance(it1, -3);
+                advance(it2, -3);
+                advance(it3, -3);
+            }
+            b.erase(it1 + 3, it3 + 4);
             continue;
         }
         advance(it1, 1);
         advance(it2, 1);
         advance(it3, 1);
-        a += b[i];
     }
 
-    return a;
+    b.erase(b.end() - 2, b.end());
+
+    return b;
 }
 
 

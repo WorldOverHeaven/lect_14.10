@@ -7,4 +7,5 @@ CMakeFiles\lect_14_10.dir\main.cpp.obj: ..\task2.h
 CMakeFiles\lect_14_10.dir\main.cpp.obj: ..\task3.h
 CMakeFiles\lect_14_10.dir\main.cpp.obj: ..\task4.h
 CMakeFiles\lect_14_10.dir\main.cpp.obj: ..\task5.h
+CMakeFiles\lect_14_10.dir\main.cpp.obj: ..\task6.h
 

@@ -23,6 +23,8 @@ task4.h
 C:/Users/kirill/CLionProjects/lect_14.10/task4.h
 task5.h
 C:/Users/kirill/CLionProjects/lect_14.10/task5.h
+task6.h
+C:/Users/kirill/CLionProjects/lect_14.10/task6.h
 
 C:/Users/kirill/CLionProjects/lect_14.10/task1.h
 string
@@ -55,6 +57,14 @@ algorithm
 -
 
 C:/Users/kirill/CLionProjects/lect_14.10/task5.h
+string
+-
+iostream
+-
+algorithm
+-
+
+C:/Users/kirill/CLionProjects/lect_14.10/task6.h
 string
 -
 iostream
