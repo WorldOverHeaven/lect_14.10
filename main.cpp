@@ -11,7 +11,7 @@
 using namespace std;
 
 int main() {
-    string s = "::-)-:-))a::::::-:-))-)-)-)-(-)bb";
-    cout << delSmileAll(s) << endl;
+    vector<int> a = {3, 3, 3, 3, 7, 7, 7, 6};
+    minMax(4, a);
     return 0;
 }
