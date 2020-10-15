@@ -11,8 +11,7 @@
 using namespace std;
 
 int main() {
-    string s = "aaa::-(-)a";
-    auto a = delSmileAll(s);
-    cout << a << endl;
+    string s = "::-)-:-))a::::::-:-))-)-)-)-(-)bb";
+    cout << delSmileAll(s) << endl;
     return 0;
 }

@@ -12,7 +12,7 @@ string delSmileAll(string c) {
         return c;
     }
 
-    auto b = c + "aa";
+    auto b = "aaaa" + c + "aaaa";
 
     auto it1 = b.begin();
     auto it2 = b.begin();
@@ -23,13 +23,11 @@ string delSmileAll(string c) {
 
     for (int i = 0; i < b.size() - 2; ++i) {
         if (*it1 == ':' && *it2 == '-' && (*it3 == '(' || *it3 == ')')) {
-            if (i >= 3) {
-                i += -4;
-                advance(it1, -3);
-                advance(it2, -3);
-                advance(it3, -3);
-            }
-            b.erase(it1 + 3, it3 + 4);
+            advance(it1, -3);
+            advance(it2, -3);
+            advance(it3, -3);
+            b.erase(it1 + 3, it1 + 6);
+            i -= 4;
             continue;
         }
         advance(it1, 1);
@@ -37,7 +35,8 @@ string delSmileAll(string c) {
         advance(it3, 1);
     }
 
-    b.erase(b.end() - 2, b.end());
+    b.erase(b.end() - 4, b.end());
+    b.erase(b.begin(), b.begin() + 4);
 
     return b;
 }
